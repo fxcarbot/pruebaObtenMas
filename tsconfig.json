@@ -1,0 +1,36 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "target": "es2015",
+    "jsx": "react-native",
+    "noEmit": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "lib": ["es2015", "es2016"],
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noImplicitAny": false,
+    "strict": true,
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "_assets": ["./assets"],
+      "_components": ["./src/presentation/components"],
+      "_navigators": ["./src/presentation/navigators"],
+      "_screens": ["./src/presentation/screens"],
+      "_global": ["./src/application/global"],
+      "_types": ["./src/application/types"],
+      "_util": ["./src/application/util"],
+      "_apis": ["./src/infrastucture/apis"],
+      "_slices": ["./src/application/state-manager/services"],
+      "_firebase": ["./src/infrastucture/firebase"],
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ]
+}
